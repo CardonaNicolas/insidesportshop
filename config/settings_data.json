@@ -24,12 +24,18 @@
       "featured-products": {
         "type": "featured-products",
         "settings": {
-          "home_page_featured_products": "frontpage"
+          "title": "Collection en vedette",
+          "home_page_featured_products": "frontpage",
+          "home_featured_products_row_num": 2
         }
       },
       "featured-content": {
         "type": "featured-content",
-        "settings": {}
+        "settings": {
+          "section_title": "Parlez de votre marque",
+          "text": "<p>Utilisez ce texte pour partager des informations sur votre marque. Décrivez un produit, partagez des annonces, ou souhaitez la bienvenue à vos clients.<\/p>",
+          "text_size": "medium"
+        }
       },
       "footer": {
         "type": "footer",
@@ -37,19 +43,53 @@
           "footer-0": {
             "type": "menu",
             "settings": {
-              "menu": "footer"
+              "title": "",
+              "menu": ""
             }
           }
         },
         "block_order": [
           "footer-0"
         ],
-        "settings": {}
+        "settings": {
+          "show_payment_icons": false
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_max_width": 150,
+          "show_announcement": false,
+          "home_page_only": true,
+          "announcement_text": "Annoncez quelque chose ici",
+          "tagline": ""
+        }
+      },
+      "sidebar": {
+        "type": "sidebar",
+        "settings": {
+          "main_menu_link_list": "main-menu"
+        }
+      },
+      "1607435175e45f9946": {
+        "type": "featured-banner",
+        "settings": {
+          "title": ""
+        }
+      },
+      "1607435404f3719999": {
+        "type": "newsletter",
+        "settings": {
+          "heading": "S'inscrire à la newsletter",
+          "subtext": "<p>Promotions, nouveaux produits et soldes. Directement dans votre boîte de réception.<\/p>"
+        }
       }
     },
     "content_for_index": [
+      "1607435175e45f9946",
       "featured-products",
-      "featured-content"
+      "featured-content",
+      "1607435404f3719999"
     ]
   },
   "presets": {

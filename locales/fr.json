@@ -23,7 +23,7 @@
       "signup_form_success": "Nous vous enverrons un e-mail juste avant l'ouverture !!",
       "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
       "password_link": "Entrer avec un mot de passe",
-      "powered_by_shopify_html": "Cette boutique sera propulsée par {{ shopify }}"
+      "powered_by_shopify_html": "#"
     },
     "social": {
       "share_on_facebook": "Partager",
@@ -313,6 +313,11 @@
       "print": "Imprimer",
       "remaining_html": "{{ balance }} restant",
       "add_to_apple_wallet": "Ajouter à Apple Wallet"
+    }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": "#"
     }
   }
 }

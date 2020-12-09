@@ -2176,7 +2176,8 @@ th {
 
 #HeaderLogoWrapper {
   position: relative;
-  margin: 30px 0;
+  margin: 0;
+  padding: 0;
 
   @include media-query($small) {
     margin: 30px auto;
@@ -5121,3 +5122,21 @@ button {
   }
 }
 
+/******* SOME CUSTOM CSS *********/
+.new-grid-item {
+   padding-top: 15px;
+ }
+
+#logo-wrapper-custom {
+  padding-top: 0;
+}
+
+#HeaderLogoCustom {
+  max-width: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  #logo-wrapper-custom {
+    text-align: center !important;
+  }
+}

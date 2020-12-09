@@ -48,8 +48,7 @@
 
 <div class="site-wrapper">
   <div class="top-bar grid">
-
-    <div class="grid__item medium-up--one-fifth small--one-half">
+    <div class="grid__item medium-up--one-fifth small--one-half new-grid-item">
       <div class="top-bar__search">
         <a href="{{ routes.search_url }}" class="medium-up--hide">
           {% include 'icon-search' %}
@@ -66,7 +65,7 @@
     </div>
 
     {% if shop.customer_accounts_enabled %}
-      <div class="grid__item medium-up--two-fifths small--hide">
+      <div class="grid__item medium-up--one-fifth small--hide new-grid-item">
         <span class="customer-links small--hide">
           {% if customer %}
             {% if customer.first_name != blank %}
@@ -86,7 +85,7 @@
       </div>
     {% endif %}
 
-    <div class="grid__item {% if shop.customer_accounts_enabled %} medium-up--two-fifths {% else %} medium-up--four-fifths {% endif %} small--one-half text-right">
+    <div class="grid__item {% if shop.customer_accounts_enabled %} medium-up--two-fifths {% else %} medium-up--four-fifths {% endif %} small--one-half text-right new-grid-item">
       <a href="{{ routes.cart_url }}" class="site-header__cart">
         {% include 'icon-cart' %}
         <span class="small--hide">
@@ -95,10 +94,26 @@
         </span>
       </a>
     </div>
-  </div>
 
-  <hr class="small--hide hr--border">
-
+    <!-- start html custom -->
+    {% if section.settings.logo %}
+      <div id="logo-wrapper-custom" class="supports-js grid__item medium-up--one-fifth text-right">
+        <a href="{{ routes.root_url }}" itemprop="url">
+          <img id="HeaderLogoCustom"
+                class="lazyload"
+                src="{{ section.settings.logo | img_url: '150x150' }}"
+                data-src="{{ img_url }}"
+                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ section.settings.logo.alt | default: shop.name }}"
+                itemprop="logo">
+        </a>
+      </div>
+    {% endif %}
+  <!-- stop html custom -->
+  </div> 
+ <!--
   <header class="site-header grid medium-up--grid--table" role="banner">
     <div class="grid__item small--text-center">
       <div itemscope itemtype="http://schema.org/Organization">
@@ -158,6 +173,7 @@
       </div>
     {% endunless %}
   </header>
+  -->
 </div>
 
 
