@@ -106,4 +106,5 @@
       {% include 'product-unit-price', variant: product.selected_or_first_available_variant %}
     {% endif %}
   </div>
+  <a href="{{ product.url | within: collection }}" class="view-more"><p>View more</p></a>
 </div>

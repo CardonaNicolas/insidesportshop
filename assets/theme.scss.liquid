@@ -5140,3 +5140,43 @@ button {
     text-align: center !important;
   }
 }
+
+@media screen and (min-width: 900px) {
+  #logo-wrapper-custom {
+    max-height: 70px;
+  }
+}
+
+.product.grid__item {
+  position: relative;
+  .view-more {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(250.0, 250.0, 250.0, 0);
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: visibility 0s, opacity 0.5s linear;
+
+    p {
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 0%;
+      font-weight: bold;
+      padding: 10px 0px 10px;
+      transition: top 0.5s;
+    }
+  }
+}
+.product.grid__item:hover .view-more {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(250.0, 250.0, 250.0, 0.4);
+    p {
+      top: 40%;
+    }
+}
