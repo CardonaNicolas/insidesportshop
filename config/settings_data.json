@@ -1,36 +1,41 @@
 {
   "current": {
     "color_body_bg": "#ffffff",
-    "color_body_text": "#333333",
-    "color_primary_color": "#333333",
+    "color_body_text": "#252525",
+    "color_primary_color": "#6d6c6a",
     "color_primary_button_text": "#ffffff",
-    "color_sale_badge": "#c8493f",
-    "color_borders": "#e8e8e8",
+    "color_sale_badge": "#d8b208",
+    "color_borders": "#d8b208",
     "color_form": "#f4f4f4",
     "color_image_overlay_text": "#fff",
-    "color_image_overlay": "#333333",
+    "color_image_overlay": "#252525",
     "image_overlay_opacity": 25,
-    "type_header_font": "times_new_roman_n4",
+    "type_header_font": "oswald_n4",
     "type_header_base_size": "28px",
-    "type_base_font": "helvetica_n4",
+    "type_base_font": "roboto_n4",
     "type_base_size": "15px",
     "type_button_base_size": "14px",
     "type_navigation_base_size": "16px",
-    "show_breadcrumb_nav": true,
+    "show_breadcrumb_nav": false,
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/logoinsidesportshop.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logoinsidesportshop.png",
+    "checkout_accent_color": "#d8b208",
+    "checkout_button_color": "#6d6c6a",
     "sections": {
       "featured-products": {
         "type": "featured-products",
         "settings": {
-          "title": "Collection en vedette",
+          "title": "Bests products",
           "home_page_featured_products": "frontpage",
           "home_featured_products_row_num": 2
         }
       },
       "featured-content": {
         "type": "featured-content",
+        "disabled": true,
         "settings": {
           "section_title": "Parlez de votre marque",
           "text": "<p>Utilisez ce texte pour partager des informations sur votre marque. Décrivez un produit, partagez des annonces, ou souhaitez la bienvenue à vos clients.<\/p>",
@@ -44,21 +49,29 @@
             "type": "menu",
             "settings": {
               "title": "",
-              "menu": ""
+              "menu": "footer"
+            }
+          },
+          "41954678-73f0-44f5-8edf-5ef4682ab870": {
+            "type": "newsletter",
+            "settings": {
+              "subtext": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
             }
           }
         },
         "block_order": [
-          "footer-0"
+          "footer-0",
+          "41954678-73f0-44f5-8edf-5ef4682ab870"
         ],
         "settings": {
-          "show_payment_icons": false
+          "show_payment_icons": true
         }
       },
       "header": {
         "type": "header",
         "settings": {
-          "logo_max_width": 150,
+          "logo": "shopify:\/\/shop_images\/logoinsidesportshop.png",
+          "logo_max_width": 70,
           "show_announcement": false,
           "home_page_only": true,
           "announcement_text": "Annoncez quelque chose ici",
@@ -71,25 +84,106 @@
           "main_menu_link_list": "main-menu"
         }
       },
-      "1607435175e45f9946": {
-        "type": "featured-banner",
+      "collection-template": {
+        "type": "collection-template",
         "settings": {
-          "title": ""
+          "vendor_show": false,
+          "collection_sort_enable": true,
+          "collection_tag_enable": false
         }
       },
-      "1607435404f3719999": {
-        "type": "newsletter",
+      "16075863505a02ec42": {
+        "type": "collection-list",
+        "blocks": {
+          "16075863505a02ec42-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "bodybuilding"
+            }
+          },
+          "16075863505a02ec42-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "fitness"
+            }
+          },
+          "16075863505a02ec42-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "recovery"
+            }
+          }
+        },
+        "block_order": [
+          "16075863505a02ec42-0",
+          "16075863505a02ec42-1",
+          "16075863505a02ec42-2"
+        ],
         "settings": {
-          "heading": "S'inscrire à la newsletter",
-          "subtext": "<p>Promotions, nouveaux produits et soldes. Directement dans votre boîte de réception.<\/p>"
+          "title": "Collection list",
+          "grid": 3
+        }
+      },
+      "1607586368aa819950": {
+        "type": "slideshow",
+        "blocks": {
+          "1607586368aa819950-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Indoor sports equipment",
+              "button_label": ""
+            }
+          },
+          "1607586368aa819950-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner-2.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "The best way to stay fit",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1607586368aa819950-0",
+          "1607586368aa819950-1"
+        ],
+        "settings": {
+          "slider_height": "adapt",
+          "slider_home_auto": false,
+          "slider_home_rate": 7,
+          "slider_home_transition": "slide",
+          "text_size": "medium"
+        }
+      },
+      "16076935598c01e6a6": {
+        "type": "icons-banner",
+        "settings": {
+          "link_1": "shopify:\/\/collections\/bodybuilding",
+          "title_1": "Stay strong",
+          "image_1": "shopify:\/\/shop_images\/icon1.png",
+          "link_2": "shopify:\/\/collections\/fitness",
+          "title_2": "Stay fit",
+          "image_2": "shopify:\/\/shop_images\/icon3.png",
+          "link_3": "shopify:\/\/collections\/recovery",
+          "title_3": "Stay healthy",
+          "image_3": "shopify:\/\/shop_images\/icon2.png"
         }
       }
     },
     "content_for_index": [
-      "1607435175e45f9946",
-      "featured-products",
-      "featured-content",
-      "1607435404f3719999"
+      "1607586368aa819950",
+      "16076935598c01e6a6",
+      "16075863505a02ec42",
+      "featured-products"
     ]
   },
   "presets": {

@@ -29,7 +29,7 @@
     {% endunless %}
     <div class="collection-grid-item__title-wrapper">
       <h3 class="h2 collection-grid-item__title">
-        {% if collection.title == blank %}
+        {% if collection.title == blank %} 
           {{ 'homepage.onboarding.collection_title' | t }}
         {% else %}
           {{ collection.title }}
